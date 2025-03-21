@@ -50,11 +50,7 @@ namespace WebApplication5.Controllers
         }
 
 
-        public async Task<IActionResult> GetHadithsByChapter(string bookSlug, int chapterId)
-        {
-            var hadiths = await _hadithService.GetHadithsByChapterAsync(bookSlug, chapterId);
-            return View(hadiths);
-        }
+    
 
     }
 }
